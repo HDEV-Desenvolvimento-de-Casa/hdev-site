@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Desafio EstacionamentoOn — HDEV</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<h1>🅿️ EstacionamentoOn — Desafio HDEV</h1>
+
+<p>Bem-vindo ao <strong>Desafio de Código HDEV</strong>! A proposta é desenvolver um sistema <strong>ponta a ponta</strong> (Desktop ou Web) de <strong>Gestão de Estacionamento</strong>, inspirado no projeto <strong>EstacionamentoOn</strong>.</p>
+
+<p>O objetivo não é a tecnologia escolhida, mas sim entregar um <strong>projeto funcional</strong> que utilize obrigatoriamente um <strong>banco local SQLite</strong>. Os melhores projetos receberão um <strong>badge de destaque da comunidade HDEV</strong> 🏅.</p>
+
+<hr>
+
+<h2>🧭 Sobre o Projeto</h2>
+
+<p>O <strong>EstacionamentoOn</strong> é um sistema moderno e intuitivo para o controle completo de veículos em estacionamentos. Ele deve permitir o <strong>cadastro, cálculo de permanência, baixa de veículos e controle financeiro</strong> de forma automatizada.</p>
+
+<p>Ideal para gestores de estacionamento, lava-rápidos e condomínios, com foco em <strong>praticidade, automação e eficiência</strong>.</p>
+
+<hr>
+
+<h2>⚙️ Funcionalidades Obrigatórias</h2>
+
+<ul>
+<li>Cadastro de veículos (Placa, Modelo, Cor)</li>
+<li>Registro automático da Data e Hora de Entrada</li>
+<li>Cálculo automático de tempo de permanência e valor total</li>
+<li>Função <strong>Dar Baixa</strong> com registro da Data/Hora de Saída</li>
+<li>Atualização automática do status (Estacionado / Finalizado)</li>
+<li>Bloqueio de edição para veículos finalizados</li>
+<li>Interface moderna (Web) ou intuitiva (Desktop)</li>
+<li>Telas de Login e Home com autenticação simples</li>
+</ul>
+
+<hr>
+
+<h2>💰 Regras de Cobrança</h2>
+
+<ul>
+<li><strong>Primeiras 2 horas</strong> = R$ 18,00</li>
+<li><strong>Hora adicional (ou fração)</strong> = R$ 5,00</li>
+</ul>
+
+<p>O cálculo deve ser feito automaticamente no momento da baixa.</p>
+
+<hr>
+
+<h2>🧱 Estrutura do Banco de Dados (SQLite)</h2>
+
+<pre><code>CREATE TABLE Veiculos (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Placa TEXT NOT NULL,
+    Modelo TEXT,
+    Cor TEXT,
+    DataEntrada DATETIME NOT NULL,
+    HoraEntrada TEXT NOT NULL,
+    DataSaida DATETIME,
+    ValorPago DECIMAL(10,2),
+    Status TEXT NOT NULL
+);
+</code></pre>
+
+<hr>
+
+<h2>🎯 Escopo do Desafio</h2>
+
+<ul>
+<li>Pode ser desenvolvido em <strong>qualquer tecnologia</strong></li>
+<li>Pode ser <strong>Desktop ou Web</strong></li>
+<li><strong>SQLite local obrigatório</strong></li>
+<li>Projeto funcional ponta a ponta</li>
+</ul>
+
+<hr>
+
+<h2>🏆 Reconhecimento</h2>
+
+<ul>
+<li>Projetos entregues recebem <strong>badge de participação</strong></li>
+<li>Os melhores projetos recebem <strong>badge de destaque 🥇</strong></li>
+</ul>
+
+<hr>
+
+<h2>🚀 Como Participar</h2>
+
+<ol>
+<li>Faça o <strong>fork</strong> deste repositório</li>
+<li>Crie seu projeto seguindo o escopo</li>
+<li>Documente no README:
+    <ul>
+        <li>Tecnologias utilizadas</li>
+        <li>Como rodar</li>
+        <li>Prints/GIFs</li>
+    </ul>
+</li>
+<li>Crie uma <strong>issue de entrega</strong> no repositório oficial com:
+    <ul>
+        <li>Link do projeto</li>
+        <li>Vídeo demonstrando</li>
+    </ul>
+</li>
+</ol>
+
+<hr>
+
+<h2>📌 Tecnologias Possíveis</h2>
+
+<h3>Backend</h3>
+<ul>
+<li>ASP.NET</li>
+<li>Node.js</li>
+<li>Django</li>
+<li>Spring Boot</li>
+<li>Laravel</li>
+</ul>
+
+<h3>Frontend</h3>
+<ul>
+<li>React</li>
+<li>Angular</li>
+<li>Vue</li>
+<li>Bootstrap</li>
+<li>Tailwind</li>
+</ul>
+
+<h3>Desktop</h3>
+<ul>
+<li>C# WinForms/WPF</li>
+<li>JavaFX</li>
+<li>Electron</li>
+<li>Python Tkinter/PyQt</li>
+</ul>
+
+<hr>
+
+<h2>📣 Comunidade HDEV</h2>
+
+<p>Este desafio é promovido pela comunidade <strong>HDEV</strong> para incentivar aprendizado colaborativo e prática de projetos reais. Participe, compartilhe seu código e conquiste seu <strong>badge de destaque</strong>!</p>
+
+<hr>
+
+<h2>🏅 Itens Obrigatórios para Badge de Destaque</h2>
+
+<ul>
+<li>SQLite local obrigatório</li>
+<li>CRUD completo</li>
+<li>Cálculo automático</li>
+<li>Baixa com status atualizado</li>
+<li>Interface funcional</li>
+<li>Login simples</li>
+<li>README completo</li>
+<li>Vídeo demonstrativo</li>
+</ul>
+
+<hr>
+
+<h2>🏆 Reconhecimento Final</h2>
+
+<p>Projetos aprovados recebem:</p>
+<ul>
+<li><strong>Badge de Participação</strong></li>
+<li><strong>Badge de Destaque</strong> para os melhores</li>
+</ul>
+
+</body>
+</html>

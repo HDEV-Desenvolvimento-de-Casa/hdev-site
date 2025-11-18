@@ -1,0 +1,26 @@
+title: "HDEV | Desenvolvimento de Casa"
+description: "Comunidade para prática, desafios e evolução em desenvolvimento de software."
+theme: minima
+markdown: kramdown
+
+# Navegação global do site
+navigation:
+  - title: "🏠 Início"
+    url: "/"
+  - title: "🔥 Desafios"
+    url: "/desafios/"
+  - title: "📘 Guias"
+    url: "/guias"
+  - title: "🧪 Labs"
+    url: "/labs"
+  - title: "📝 Exercícios"
+    url: "/exercicios"
+  - title: "📦 Templates"
+    url: "/templates"
+  - title: "🎨 Assets"
+    url: "/assets"
+
+# Pasta base do site
+include:
+  - assets
+  - desafios
